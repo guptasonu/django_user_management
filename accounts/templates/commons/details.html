@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile Page{% endblock title %}
+
+{% block content %}
+<h2>User's Details</h2>
+
+<br></br>
+<label>Email Address : </label>
+<td>{{user.email}}</td>
+<br><br>
+<label>First Name : </label>
+<td>{{ user.first_name }}</td>
+<br><br>
+<label>Last Name : </label>
+<td>{{ object.last_name }}</td>
+<br><br>
+<a href="{% url 'home' %}">Back</a>
+{% endblock content %}
